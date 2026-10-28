@@ -1,0 +1,656 @@
+/* =====================================================================
+   css/style.css  -  the look of Mehfil-e-Shayari
+
+   Want to change the colours? Edit the values in the :root block
+   below. Every page uses them, so one change updates the whole site.
+   ===================================================================== */
+
+:root {
+  /* Backgrounds */
+  --bg: #130f19;            /* very dark plum */
+  --bg-soft: #1a1423;
+  --surface: #211a2c;       /* cards */
+  --surface-hover: #2a2138;
+
+  /* Accent colours */
+  --plum: #6e4a74;          /* muted plum */
+  --plum-deep: #3b2745;
+  --pink: #e9aac4;          /* soft pink */
+  --pink-dim: #c98fa8;
+  --gold: #d8b06a;          /* warm gold */
+  --gold-soft: #b8935a;
+
+  /* Text */
+  --text: #f3eaf1;
+  --text-muted: #b9a9bc;
+
+  /* Lines, status colours, shape */
+  --border: rgba(233, 170, 196, 0.16);
+  --border-strong: rgba(216, 176, 106, 0.4);
+  --danger: #f4a0b4;
+  --success: #a8dcb8;
+  --radius: 16px;
+  --shadow: 0 12px 32px rgba(0, 0, 0, 0.35);
+
+  /* Fonts (Hindi and Urdu fall back to the Noto fonts) */
+  --font-heading: "Cormorant Garamond", "Noto Sans Devanagari", Georgia, "Times New Roman", serif;
+  --font-body: "Poppins", "Noto Sans Devanagari", "Noto Nastaliq Urdu", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-poem: "Cormorant Garamond", "Noto Sans Devanagari", "Noto Nastaliq Urdu", Georgia, serif;
+}
+
+/* ---------- Basics ---------- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--text);
+  background:
+    radial-gradient(900px 500px at 85% -10%, rgba(110, 74, 116, 0.35), transparent 60%),
+    radial-gradient(700px 450px at -10% 20%, rgba(233, 170, 196, 0.08), transparent 60%),
+    var(--bg);
+  background-attachment: fixed;
+}
+
+main {
+  flex: 1;
+}
+
+a {
+  color: var(--pink);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--gold);
+}
+
+:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 3px;
+  border-radius: 6px;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  line-height: 1.2;
+  margin: 0 0 0.5em;
+}
+
+.skip-link {
+  position: absolute;
+  left: 1rem;
+  top: -4rem;
+  z-index: 100;
+  padding: 0.6rem 1rem;
+  background: var(--gold);
+  color: #1a1423;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+.skip-link:focus {
+  top: 1rem;
+  color: #1a1423;
+}
+
+/* ---------- Header and navigation ---------- */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem 1.5rem;
+  padding: 0.9rem clamp(1rem, 4vw, 2.5rem);
+  background: rgba(19, 15, 25, 0.82);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--border);
+}
+
+.logo {
+  font-family: var(--font-heading);
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--gold);
+  letter-spacing: 0.01em;
+}
+
+.logo:hover {
+  color: var(--pink);
+}
+
+.main-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 0.5rem;
+}
+
+.main-nav a {
+  padding: 0.4rem 0.85rem;
+  border-radius: 999px;
+  color: var(--text-muted);
+  font-size: 0.92rem;
+  font-weight: 500;
+  transition: background 0.2s, color 0.2s;
+}
+
+.main-nav a:hover,
+.main-nav a[aria-current="page"] {
+  color: var(--text);
+  background: var(--plum-deep);
+}
+
+/* ---------- Hero ---------- */
+.hero {
+  text-align: center;
+  padding: clamp(3rem, 10vw, 6.5rem) 1.25rem clamp(2.5rem, 7vw, 4.5rem);
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.hero-eyebrow {
+  margin: 0 0 0.75rem;
+  color: var(--pink-dim);
+  font-size: 0.85rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+}
+
+.hero-title {
+  font-size: clamp(2.6rem, 8vw, 4.8rem);
+  font-weight: 700;
+  margin: 0 0 0.35em;
+  background: linear-gradient(120deg, var(--pink) 0%, var(--gold) 70%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.hero-tagline {
+  margin: 0;
+  font-family: var(--font-heading);
+  font-size: clamp(1.3rem, 3.6vw, 1.9rem);
+  font-style: italic;
+  color: var(--text);
+}
+
+.hero-subtagline {
+  margin: 0.6rem 0 0;
+  color: var(--text-muted);
+  letter-spacing: 0.08em;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-top: 2rem;
+}
+
+/* ---------- Buttons ---------- */
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  padding: 0.7rem 1.4rem;
+  border: 1px solid var(--gold);
+  border-radius: 999px;
+  background: linear-gradient(135deg, var(--gold) 0%, var(--gold-soft) 100%);
+  color: #1a1423;
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.15s, box-shadow 0.2s, background 0.2s, color 0.2s;
+}
+
+.button:hover {
+  color: #1a1423;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 18px rgba(216, 176, 106, 0.25);
+}
+
+.button:disabled {
+  opacity: 0.6;
+  cursor: wait;
+  transform: none;
+  box-shadow: none;
+}
+
+.button-ghost {
+  background: transparent;
+  color: var(--gold);
+}
+
+.button-ghost:hover {
+  background: rgba(216, 176, 106, 0.12);
+  color: var(--gold);
+}
+
+/* ---------- Sections ---------- */
+.section {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1.5rem clamp(1rem, 4vw, 2rem) 2.5rem;
+}
+
+.section-narrow {
+  max-width: 760px;
+}
+
+.section-title {
+  font-size: clamp(1.7rem, 4vw, 2.2rem);
+  color: var(--gold);
+}
+
+.section-intro {
+  margin: -0.25rem 0 1.25rem;
+  color: var(--text-muted);
+}
+
+.page-title {
+  font-size: clamp(2rem, 6vw, 3rem);
+  color: var(--pink);
+  margin-top: 0.5rem;
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 1rem;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+/* ---------- Search and sort ---------- */
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.field {
+  flex: 1 1 280px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.field-small {
+  flex: 0 1 200px;
+}
+
+label {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--text-muted);
+}
+
+input[type="search"],
+input[type="text"],
+input[type="password"],
+select {
+  width: 100%;
+  padding: 0.7rem 0.95rem;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  color: var(--text);
+  background: var(--bg-soft);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+input::placeholder {
+  color: #8d7f91;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+  border-color: var(--gold);
+  box-shadow: 0 0 0 3px rgba(216, 176, 106, 0.18);
+}
+
+select {
+  cursor: pointer;
+}
+
+.result-count {
+  min-height: 1.5em;
+  margin: 0 0 1rem;
+  color: var(--text-muted);
+  font-size: 0.88rem;
+}
+
+/* ---------- Poem cards ---------- */
+.poem-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 320px), 1fr));
+  gap: 1.25rem;
+}
+
+.poem-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1.25rem;
+  padding: 1.75rem 1.5rem 1.25rem;
+  overflow: hidden;
+  background: linear-gradient(160deg, var(--surface) 0%, var(--bg-soft) 100%);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  transition: transform 0.2s, border-color 0.2s;
+}
+
+.poem-card::before {
+  content: "\201C";
+  position: absolute;
+  top: -0.35rem;
+  left: 0.9rem;
+  font-family: var(--font-heading);
+  font-size: 4.5rem;
+  line-height: 1;
+  color: var(--gold);
+  opacity: 0.22;
+  pointer-events: none;
+}
+
+.poem-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--border-strong);
+}
+
+.poem-text {
+  margin: 0;
+  font-family: var(--font-poem);
+  font-size: 1.32rem;
+  font-weight: 500;
+  line-height: 1.85;
+  white-space: pre-line;      /* keeps the line breaks of each shayari */
+  overflow-wrap: anywhere;
+  text-align: start;
+}
+
+.poem-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.25rem 1rem;
+  padding-top: 0.85rem;
+  border-top: 1px solid var(--border);
+  font-size: 0.85rem;
+}
+
+.poem-author {
+  color: var(--pink);
+  font-weight: 500;
+}
+
+.poem-author::before {
+  content: "\2014\00a0";
+  color: var(--gold-soft);
+}
+
+a.poem-author:hover {
+  color: var(--gold);
+}
+
+.poem-meta time {
+  color: var(--text-muted);
+}
+
+/* ---------- Empty state ---------- */
+.empty-state {
+  max-width: 520px;
+  margin: 2rem auto;
+  padding: 2rem 1.5rem;
+  text-align: center;
+  color: var(--text-muted);
+  background: var(--bg-soft);
+  border: 1px dashed var(--border-strong);
+  border-radius: var(--radius);
+}
+
+.empty-state h3 {
+  color: var(--gold);
+  font-size: 1.6rem;
+}
+
+.empty-icon {
+  margin: 0 0 0.5rem;
+  font-size: 2.2rem;
+}
+
+/* ---------- Author chips ---------- */
+.chip-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.45rem 0.6rem 0.45rem 1rem;
+  color: var(--text);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  font-weight: 500;
+  transition: border-color 0.2s, background 0.2s, transform 0.15s;
+}
+
+.chip:hover {
+  color: var(--text);
+  background: var(--surface-hover);
+  border-color: var(--border-strong);
+  transform: translateY(-1px);
+}
+
+.chip-count {
+  min-width: 1.6rem;
+  padding: 0.05rem 0.45rem;
+  text-align: center;
+  font-size: 0.78rem;
+  color: #1a1423;
+  background: var(--pink);
+  border-radius: 999px;
+}
+
+/* ---------- Author profile ---------- */
+.profile-header {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  margin: 0.5rem 0 1.5rem;
+}
+
+.profile-initial {
+  display: grid;
+  place-items: center;
+  flex: 0 0 auto;
+  width: 84px;
+  height: 84px;
+  font-family: var(--font-heading);
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: #1a1423;
+  background: linear-gradient(135deg, var(--pink), var(--gold));
+  border-radius: 50%;
+  box-shadow: 0 0 0 4px var(--plum-deep);
+}
+
+.profile-name {
+  margin: 0;
+  font-size: clamp(2rem, 6vw, 3rem);
+  color: var(--text);
+  overflow-wrap: anywhere;
+}
+
+.profile-count {
+  margin: 0.15rem 0 0;
+  color: var(--gold);
+  font-weight: 500;
+}
+
+.other-authors {
+  margin-top: 3rem;
+}
+
+/* ---------- Private collection ---------- */
+.panel {
+  padding: 1.5rem;
+  background: linear-gradient(160deg, var(--surface) 0%, var(--bg-soft) 100%);
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.field-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin: 0.4rem 0 0.75rem;
+}
+
+.field-row input {
+  flex: 1 1 220px;
+  width: auto;
+}
+
+.checkbox-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+.checkbox-label input {
+  accent-color: var(--gold);
+}
+
+.status {
+  min-height: 1.5em;
+  margin: 1rem 0 0;
+  font-size: 0.95rem;
+}
+
+.status-info {
+  color: var(--text-muted);
+}
+
+.status-error {
+  color: var(--danger);
+}
+
+.status-success {
+  color: var(--success);
+}
+
+.note {
+  margin: 1.25rem 0 0;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border);
+  color: var(--text-muted);
+  font-size: 0.85rem;
+}
+
+.unlocked-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem 1rem;
+  margin-bottom: 1.25rem;
+  padding: 0.9rem 1.1rem;
+  background: var(--bg-soft);
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius);
+}
+
+.unlocked-bar p {
+  margin: 0;
+  color: var(--success);
+}
+
+/* ---------- Footer ---------- */
+.site-footer {
+  padding: 1.5rem 1rem 2rem;
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 0.88rem;
+  border-top: 1px solid var(--border);
+}
+
+.site-footer p {
+  margin: 0;
+}
+
+/* ---------- Small screens ---------- */
+@media (max-width: 560px) {
+  .site-header {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .main-nav {
+    justify-content: center;
+  }
+
+  .profile-header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .field-small {
+    flex: 1 1 100%;
+  }
+
+  .poem-text {
+    font-size: 1.2rem;
+  }
+}
+
+/* ---------- Respect "reduce motion" settings ---------- */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  * {
+    transition: none !important;
+  }
+}
