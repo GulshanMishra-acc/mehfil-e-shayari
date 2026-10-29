@@ -236,7 +236,35 @@ Tohra ta pte ba Tohra btawe ke ka ba`,
     text: `Ki lakho ko tukharaya hai tere liye Oo bemisal husan ki malika, Jis husan ka gurur karti hai Tu Wo to ek din dhal jayega, Ye jo roj guzarte tere aage piche ashiq, Inhe koi aur rupwala mil jayega, Ki yadd rakhna iss fakhir ki baat ko, Milne ko to log hazar milenge, Par teri sirat ko chahane wala Ye ghumnaam ashiq ya khuda , Iss janam to kya 100 janam tak nhi mil payega. 🤌`,
     date: "2026-10-28"
   },
-  
+  {
+    id: 33,
+    author: "Durgesh Viswakarma",
+    text: `Phle thi dosti phir pyaar hua Baato baato me izhar huaWo khti thi mujhse bhi acchi milegi tumhe Ab kon smjhaye usse bs usi se pyar hua`,
+    date: "2026-10-28"
+  },{
+    id: 34,
+    author: "Durgesh Viswakarma",
+    text: `Noor uske chehre pe hai Jadu uski baaton mein hai Ishq toh bs yun hi badnaam hai Tabahi toh uski aankhon mein hai😉`,
+    date: "2026-10-28"
+  },
+  {
+    id: 35,
+    author: "Durgesh Viswakarma",
+    text: `Keemat paani ki nahi pyaas ki hoti hai... Kadar maut ki nahi saans ki hoti hai... Pyaar toh bahut log karte hain duniya mein... Par keemat pyaar ki nahi vishwas ki hoti hai...!!`,
+    date: "2026-10-28"
+  },
+  {
+    id: 33,
+    author: "Durgesh Viswakarma",
+    text: `Mai tumhe chand kah du ye mumkin to hai Par log tumhe raat bhar dekhnge wo mujhe gwara nhi 🙂`,
+    date: "2026-10-28"
+  },
+  {
+    id: 33,
+    author: "Durgesh Viswakarma",
+    text: `Kabhi din to kabhi raat hogi Meri haar duaa tere naam hogi Kabhi mang kr dekh lena ye dost Hotho pe hasi or hatheli pe jaan hogi`,
+    date: "2026-10-28"
+  },
   
 //   {
 //     id: ,
