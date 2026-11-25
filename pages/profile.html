@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Shayar - Mehfil-e-Shayari</title>
+  <meta name="description" content="Read all the shayari written by one of our shayars." />
+  <meta name="theme-color" content="#130f19" />
+  <link
+    rel="icon"
+    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>❤️‍🩹</text></svg>"
+  />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Poppins:wght@300;400;500;600&family=Noto+Sans+Devanagari:wght@400;500&family=Noto+Nastaliq+Urdu:wght@400;500&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#profileMain">Skip to content</a>
+
+  <header class="site-header">
+    <a class="logo" href="../index.html">Mehfil-e-Shayari <span aria-hidden="true">❤️‍🩹</span></a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="../index.html">Home</a>
+      <a href="../index.html#shayars">Shayars</a>
+      <a href="private.html">Private Collection</a>
+    </nav>
+  </header>
+
+  <main id="profileMain" class="section">
+    <a class="back-link" href="../index.html">&larr; Back to all shayari</a>
+
+    <section class="profile-header">
+      <div id="profileInitial" class="profile-initial" aria-hidden="true">&hellip;</div>
+      <div>
+        <h1 id="profileName" class="profile-name">Loading...</h1>
+        <p id="profileCount" class="profile-count"></p>
+      </div>
+    </section>
+
+    <div id="profileControls" class="controls" hidden>
+      <div class="field field-small">
+        <label for="profileSort">Sort by date</label>
+        <select id="profileSort">
+          <option value="newest">Newest first</option>
+          <option value="oldest">Oldest first</option>
+        </select>
+      </div>
+    </div>
+
+    <div id="poemGrid" class="poem-grid"></div>
+
+    <div id="profileMessage" class="empty-state" hidden>
+      <p class="empty-icon" aria-hidden="true">🌙</p>
+      <h3 id="messageTitle"></h3>
+      <p id="messageText"></p>
+    </div>
+
+    <section id="otherAuthors" class="other-authors" hidden>
+      <h2 class="section-title">Other shayars</h2>
+      <div id="otherAuthorsList" class="chip-list"></div>
+    </section>
+
+    <noscript>
+      <p class="empty-state">Please turn on JavaScript to see this profile.</p>
+    </noscript>
+  </main>
+
+  <footer class="site-footer">
+    <p>Mehfil-e-Shayari ❤️‍🩹 &middot; Our words, our memories.</p>
+  </footer>
+
+  <script type="module" src="../js/profile.js"></script>
+</body>
+</html>
