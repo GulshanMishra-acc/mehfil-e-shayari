@@ -394,7 +394,7 @@ select {
 .poem-text {
   margin: 0;
   font-family: var(--font-poem);
-  font-size: 1.32rem;
+  font-size: 1rem;
   font-weight: 500;
   line-height: 1.85;
   white-space: pre-line;      /* keeps the line breaks of each shayari */
@@ -640,7 +640,7 @@ a.poem-author:hover {
   }
 
   .poem-text {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 }
 
