@@ -255,17 +255,147 @@ Tohra ta pte ba Tohra btawe ke ka ba`,
     date: "2026-10-28"
   },
   {
-    id: 33,
+    id: 36,
     author: "Durgesh Viswakarma",
     text: `Mai tumhe chand kah du ye mumkin to hai Par log tumhe raat bhar dekhnge wo mujhe gwara nhi 🙂`,
     date: "2026-10-28"
   },
   {
-    id: 33,
+    id: 37,
     author: "Durgesh Viswakarma",
     text: `Kabhi din to kabhi raat hogi Meri haar duaa tere naam hogi Kabhi mang kr dekh lena ye dost Hotho pe hasi or hatheli pe jaan hogi`,
     date: "2026-10-28"
   },
+   {
+    id: 38,
+    author: "Durgesh Viswakarma",
+    text: `Mat muskurao itna ki phoolon ko khabar lag jaaye, Hum kare aapki tareef aur aapko nazar lag jaaye !! Khuda kare bahut lambi ho aapki zindagi, Aur us par bhi humaari umar lag jaaye..`,
+    date: "2026-10-29"
+  },
+   {
+    id: 39,
+    author: "Durgesh Viswakarma",
+    text: `Koi puchhe tumse kon ho mai To kah dena koi khaas nhi. Ek dost tha pakka kaccha sa ek jhuth tha aadha sachha sa... Jivan ka ek sathi tha jo sath hokr bhi sath nhi Koi puche tumse kon hu mai to kh dena koi khaas nhi....`,
+    date: "2026-10-29"
+  },
+   {
+    id: 40,
+    author: "Durgesh Viswakarma",
+    text: `EK BAAT BOLU? Mai jis se baat karta hu usey udaas kar deta hu Kabhi kabhi to apno ko niraash kar deta hu, Bahut chot khayi hai dil par tabhi khamosh rahta hu Warna mai bhi chup nahi rahta. Baate behisaab karta hu.`,
+    date: "2026-10-29"
+  },
+   {
+    id: 41,
+    author: "Anshika Shrivastav",
+    text: `Tujhe chaha tha, tujhe bataya nahi, Dil mein rakha tha, kabhi jataya nahi, Tu apni duniya mein khush raha hamesha, Maine tere baad kisi ko apnaya nahi.Ab chahti hoon kisi ko phir se apna banana, Kisi ke saath naye khwaab sajana, Magar darr lagta hai phir se toot jaane se, Kahin phir na pad jaaye dil usi tarah kisi ko chahne mein. 🥀❤️‍🩹`,
+    date: "2026-10-28"
+  },
+   {
+    id: 42,
+    author: "Durgesh Viswakarma",
+    text: `Na jane kya mujhse jamana chahta h Har pal koi dil dukhana chahta hai Na jane kya jhlkta h mere chehre se 
+Har sks mujhe hi aazmana chahta h`,
+    date: "2026-11-01"
+  },
+   {
+    id: 43,
+    author: "Durgesh Viswakarma",
+    text: `Kabhi maine kisi ko azmaaya hi nhi 🥺 Jitna pyaar diya utna pyaar paya hi nhi Kisi ko meri bhi kmi mehsoos ho sayad, 😔 Bhagwan me mujhe aisa banaya hi nhi`,
+    date: "2026-11-01"
+  },
+   {
+    id: 44,
+    author: "Durgesh Viswakarma",
+    text: `Dekha jaye to spna bhi pura ho skta h Jisse tum chahte ho wo kisi aur ka bhi ho skta h Kuch log itne pagl ho jate h mohabbat me Unhe lgta h wo sks abhi bhi unka ho skta h🙂`,
+    date: "2026-11-01"
+  },
+   {
+    id: 45,
+    author: "Durgesh Viswakarma",
+    text: `Teri tarah har kisi ki Aankhon ke Noor nahi milte, Dost toh sab ko mil jaate hai lakin tere jaisa Kohinoor nahi milte...`,
+    date: "2026-11-03"
+  },
+   {
+    id: 46,
+    author: "Durgesh Viswakarma",
+    text: `Taklif is baat ki nhi ki usse chahna bhi ek sapna hai-2 Magr jise wo chahti wo bhi to apna hai Aankho me sare sapne tham leti hai , Dil jlta hai jb wo uska nam leti h, Magr kya kru maine sab riste sambhal rakha jise wo chahti h wo bhi to apna h`,
+    date: "2026-11-04"
+  },
+   {
+    id: 47,
+    author: "Durgesh Viswakarma",
+    text: `KISI KE DIL SE UTAR AAYA HOON, MAIN APNE MUQADDAR SE HAAR KAR AAYA HOON, TUM POOCHTE HO MOHABBAT MEIN KYA HUA HAASIL, 
+JO THA MERE PAAS, USE BHI KHO KAR AAYA HOON..`,
+    date: "2026-11-04"
+  },
+   {
+    id: 48,
+    author: "Durgesh Viswakarma",
+    text: `Ki uske chehre pe is kadr noor tha Uske pyar me barbad hona bhi manjoor tha Mohabbat to hmne ki thi unse❤️ Wo sks bekasoor tha.....`,
+    date: "2026-11-04"
+  },
+   {
+    id: 49,
+    author: "Durgesh Viswakarma",
+    text: `Khawbo ki sfr me kabhi kimat ki rja na mili Saja to mili pr sja ki koi wja na mili Kaise kre byan ye drde dil ka humm 
+Pasand to hm aaye logo ko par logo ke dilo me jagh na mili`,
+    date: "2026-11-04"
+  },
+   {
+    id: 50,
+    author: "Durgesh Viswakarma",
+    text: `Diya milne pr khud ki roshni chhodi nhi jati Ki diya milne pr khud ki roshni chhodi nhi jati Mile dilbar to yaara dosti todi nhi jati...😊❤️‍🩹`,
+    date: "2026-11-16"
+  },
+   {
+    id: 51,
+    author: "Durgesh Viswakarma",
+    text: `Raat Bhar Intezaar Kiya Uske Jawab Aane Ka, Subah Ehsaas Hua Jawab Na Aana Bhi To Jawab Hai...`,
+    date: "2026-11-16"
+  },
+   {
+    id: 52,
+    author: "Durgesh Viswakarma",
+    text: `Mere Dil Pr Zakham Uski Mohabbat Ki Meharbani Hai Mera Ishq Ek Adhuri Kahani Hai Sochte H Khtm Kr De Is Drd Ko Phir Yaad Aata H Ye Drd Bhi To Uski Aakhiri Nisani H`,
+    date: "2026-11-22"
+  },
+  {
+    id: 53,
+    author: "Aditya Mishra",
+    text: `कि वक़्त की तारीफ़ में हम कुछ शब्द लिखने वाले थे, कि तक़दीर की चाहत को समझ के हम, उसी के सामने झुकने वाले थे। पता नहीं लगता है, वो ऊपर वाला भी ख़फ़ा है मुझ फ़क़ीर से। पता नहीं लगता है, वो ऊपर वाला भी ख़फ़ा है मुझ फ़क़ीर से। वो हमें तब मना कर गई, जब हम उसके लिए ख़ुद बिकने वाले थे। ❤️‍🩹`,
+    date: "2026-11-22"
+  },
+  {
+    id: 54,
+    author: "Durgesh Viswakarma",
+    text: `इंसान मोहब्बत में इस कदर खो जाता है कि चादर को भी कफ़न समझ ओढ़ शो जाता है😐 मोहब्बत में हमने ना जाने क्या क्या लुटा दिए उन्होंने माँगी थी रोशनी हमने खुद को जला दिए 🥺`,
+    date: "2026-11-23"
+  },
+  {
+    id: 55,
+    author: "Durgesh Viswakarma",
+    text: `Muh Jubani Na Jtata Ki Mohabbat Kya Hai Mai Tujhe Kr Ke Dikhata Mohabbat Kya Hai Kaise Sine Se Lagau Ki Kisi Aur Ke Ho Mere Hote To Btata Mohabbat Kya Hai`,
+    date: "2026-11-24"
+  },
+  {
+    id: 56,
+    author: "Aditya Mishra",
+    text: `कि मोहब्बत चीज़ लाजवाब होती है, ये हमारी नहीं, हमारी रूह की आवाज़ होती है। कि चाहत में पार कर जाना हर कसौटी को, जब तक तुम उसके और वो तुम्हारी न हो जाए। मोहब्बत और चाहने में फ़र्क होता है हुज़ूर, चाहत में वो चली भी जाए तो कोई और आएगा। मोहब्बत तो वो होती है कि आख़िरी साँस तक लड़ो इस कायनात से ,जब तक वो तुम्हारी न हो जाए। ❤️‍🩹`,
+    date: "2026-11-24"
+  },
+  // {
+  //   id: 52,
+  //   author: "Durgesh Viswakarma",
+  //   text: ``,
+  //   date: "2026-11-22"
+  // },
+  // {
+  //   id: 52,
+  //   author: "Durgesh Viswakarma",
+  //   text: ``,
+  //   date: "2026-11-22"
+  // },
+
   
 //   {
 //     id: ,
